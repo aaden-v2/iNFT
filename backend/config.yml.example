@@ -1,0 +1,11 @@
+BASE:
+    Port: 5003
+    Address: "127.0.0.1"
+    MongoURI: ""
+    NODE_ENV: "development"
+MYSQL:
+  Host: "127.0.0.1"
+  User: "user"
+  Port: "3306"
+  Password: "pwd"
+  DataBase: "NFTADS"

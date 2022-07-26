@@ -1,0 +1,71 @@
+.App__header {
+    display: flex;
+    height: 84px;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgb(31 45 61 / 13%);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.App-logo {
+    padding: 0 2rem;
+    cursor: pointer;
+}
+.App__header-menu,
+.App__header-menu-item {
+    display: flex;
+    align-items: center;
+    color: #4e5969;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.App__header-menu-about,
+.App__header-menu-started {
+    margin-left: 5px;
+}
+
+.App__header-menu-disconnect {
+    display: flex;
+    flex-direction: column;
+}
+
+.App__header-menu-about {
+    border-right: 1px solid;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.App__header-menu {
+    margin-right: 80px;
+}
+
+.App__header-menu-login-item {
+    border-radius: 8px;
+    background-color: #008AFF;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.App__header-menu-login {
+    cursor: pointer;
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+
+.App__metaMaskLogo {
+    width: 16px;
+    height:16px;
+    margin-left: 8px;
+    margin-top: 2px;
+}

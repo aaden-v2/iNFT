@@ -1,0 +1,23 @@
+.App__modal-start-body {
+    width: 100%;
+}
+
+.App__modal-start-description {
+    margin-bottom: 20px;
+}
+
+.App__owners-packages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.App__owners-package {
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+.App__owners-package-nft-image {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}

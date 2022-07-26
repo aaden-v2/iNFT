@@ -1,0 +1,40 @@
+.drop-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem 3rem;
+}
+
+.drop-list-card-wrapper {
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 1rem 1rem rgb(31 45 61 / 13%);
+}
+
+.ant-card:hover {
+    box-shadow: 0rem 2rem 2rem rgb(31 45 61 / 36%);
+}
+
+.drop-list-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: default;
+}
+
+.drop-list-description-detail {
+    max-width: 300px;
+}
+
+.drop-record-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.drop-list-pagination {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem 4rem;
+}

@@ -1,0 +1,9 @@
+.App__about-modal-logo {
+    height: 150px;
+    width: 150px;
+}
+
+.App__about-modal-content-description {
+    font-size: 18px;
+    line-height: 24px;
+}

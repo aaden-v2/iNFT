@@ -1,0 +1,116 @@
+.App__body {
+  padding: 20px 80px;
+}
+
+.App__body-logo-name,
+.App__body-start-to-drop {
+  width: 600px;
+}
+
+.App__body-logo-name {
+  font-size: 64px;
+  color: #008AFF;
+}
+
+.create-sell-content {
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+  padding: 50px 30px 30px;
+  border-radius: .75rem;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  position: relative;
+  flex : 1
+}
+
+.create-sell-content-icon {
+  width: 75px;
+  height: 75px;
+  background: #008aff;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -40px; 
+}
+
+.App__body-actions {
+  display: flex;
+  width: 400px;
+}
+
+.App__itemInfoLogo {
+  width: 48px;
+  height:48px;
+}
+
+.App__body-start-to-drop {  
+  background-color: #008AFF;
+  border-radius: 15px;
+  cursor: pointer;
+  flex: 1;
+  font-size: 31px;
+  height: 64px;
+  line-height: 64px;
+  margin: 32px 0;
+  text-align: center;
+  color: #fff;
+}
+.App__body-burn-nft {
+  background-color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  flex: 1;
+  font-size: 32px;
+  height: 64px;
+  line-height: 64px;
+  margin: 32px 0;
+  text-align: center;
+  color: #000;
+  border  : 1px solid #008AFF;
+}
+
+.App__body-start-to-drop {
+  margin-right: 20px;
+}
+
+.App__body-description {
+  color: rgb(44, 38, 38);
+  margin-top: 32px;
+  font-size: 32px;
+  height: 48px;
+  line-height: 48px;
+}
+.App__body-advantages-title {
+  color: rgb(44, 38, 38);
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.App__body-advantages-content {
+  display: flex;
+  color: #4e5969;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.App__body-advantages-content div {
+  flex: 1;
+  margin-right: 150px;
+}
+
+.App__body-advantages-content span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.App__body-advantages-content p {
+  margin-top: 20px !important;
+}
+
+.App__body-advantages-content div:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,47 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --no-pmx",
+    "run": "pm2 start index.js --no-daemon",
+    "status": "pm2 monit",
+    "stop": "pm2 stop all",
+    "logs": "pm2 logs",
+    "lint": "eslint ./src/**/*.js ./*.js --ext .js --cache --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "debug": "^4.3.3",
+    "ethereumjs-util": "^7.1.4",
+    "express": "^4.17.2",
+    "fs-extra": "^10.0.1",
+    "mongodb": "^4.3.1",
+    "multiparty": "^4.2.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "pm2": "^5.1.2",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.9.2",
+    "eslint-webpack-plugin": "^2.5.2"
+  }
+}
