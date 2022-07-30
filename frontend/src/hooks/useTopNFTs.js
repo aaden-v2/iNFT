@@ -21,7 +21,7 @@ const nftImages = {
   DOODLES,
   PHB,
   LAND,
-  WOW
+  WOW,
 };
 const topNFTKeys = [
   "AZUKI",
@@ -33,7 +33,7 @@ const topNFTKeys = [
   "DOODLES",
   "PHB",
   "LAND",
-  "WOW"
+  "WOW",
 ];
 const contractConsts = {
   AZUKI: "0xed5af388653567af2f388e6224dc7c4b3241c544",
@@ -45,7 +45,7 @@ const contractConsts = {
   DOODLES: "0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e",
   PHB: "0x67D9417C9C3c250f61A83C7e8658daC487B56B09",
   LAND: "0x50f5474724e0Ee42D9a4e711ccFB275809Fd6d4a",
-  WOW: "0xe785e82358879f061bc3dcac6f0444462d4b5330"
+  WOW: "0xe785e82358879f061bc3dcac6f0444462d4b5330",
 };
 
 const INVALID_TIME = 365 * 24 * 60 * 60 * 1000;
@@ -66,20 +66,22 @@ const useTopNFTs = () => {
     const results1 = await Promise.all(
       topNFTKeys.slice(0, 5).map(async (item) => {
         const nftOwners = await getNFTOwners(contractConsts[item]);
+        console.log({ nftOwners });
         return {
           key: item,
           image: nftImages[item],
-          nftOwners
+          nftOwners,
         };
       })
     );
     const results2 = await Promise.all(
       topNFTKeys.slice(5, 10).map(async (item) => {
         const nftOwners = await getNFTOwners(contractConsts[item]);
+        console.log({ nftOwners });
         return {
           key: item,
           image: nftImages[item],
-          nftOwners
+          nftOwners,
         };
       })
     );
