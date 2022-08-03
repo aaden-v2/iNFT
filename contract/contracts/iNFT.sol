@@ -55,11 +55,11 @@ contract NFTAD1155 is ERC1155, Ownable, VRFConsumerBase{
         uint256 amount
     ) external payable {
         if (adOwners[id] == address(0)) {
-            refundIfOver(PRICE, amount);
             adOwners[id] = msg.sender;
-        } else {
-            require(adOwners[id] == msg.sender, "Need to be AD Owner");
             refundIfOver(PRICE, amount);
+        } else {
+            refundIfOver(PRICE, amount);
+            require(adOwners[id] == msg.sender, "Need to be AD Owner");
         }
         adOwnerBalance[msg.sender] += PRICE * amount;
         _mint(account, id, amount, new bytes(0));
