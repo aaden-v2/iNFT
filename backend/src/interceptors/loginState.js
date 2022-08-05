@@ -22,7 +22,6 @@ const validateLogin = async (req, res, next) => {
     return next();
   }
   if (!token) {
-    debug("token not exist!");
     res.status(401).json({
       errorCode: 4,
       errorMsg: "need login",
@@ -32,7 +31,6 @@ const validateLogin = async (req, res, next) => {
   }
   const address = req.header("address");
   if (!address) {
-    debug("address not exist!");
     res.status(401).json({
       errorCode: 4,
       errorMsg: "need connect",
