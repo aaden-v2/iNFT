@@ -24,7 +24,7 @@ const validateLogin = async (req, res, next) => {
   if (!token) {
     res.status(401).json({
       errorCode: 4,
-      errorMsg: "need login",
+      errorMsg: "login needed to use iNFT",
       data: {},
     });
     return;
