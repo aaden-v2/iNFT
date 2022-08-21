@@ -14,7 +14,7 @@ contract NFTAD1155 is ERC1155, Ownable, VRFConsumerBase{
     // Contract name
     string public name;
     string public uri;
-    uint256 public PRICE = 1 * 10**17; // 0.1 MATIC
+    uint256 public PRICE = 1 * 10**17; // 0.1 NATIVE_TOKEN
     uint256  awardID = 0;
     mapping(uint256 => address) private adOwners;
     mapping(address => uint256) private adOwnerBalance;

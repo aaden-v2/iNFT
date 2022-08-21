@@ -20,6 +20,7 @@ async function main() {
   await nft_ad.deployed();
 
   console.log("iNFTdeployed to:", nft_ad.address);
+  console.log({ nft_ad });
 }
 
 // We recommend this pattern to be able to use async/await everywhere
