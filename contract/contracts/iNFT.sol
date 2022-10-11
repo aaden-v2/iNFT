@@ -149,6 +149,10 @@ contract NFTAD1155 is ERC1155, Ownable, VRFConsumerBase{
         _setURI(_uri);
     }
 
+    funciton getBaseURI2(string calldata _uri) external onlyOwner {
+        _setURI(_uri);
+      }
+
     function getTotalBalance() public view returns (uint256) {
         uint256 balance = address(this).balance;
         return balance;
